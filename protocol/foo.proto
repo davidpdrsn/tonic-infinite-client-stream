@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package foo;
+
+import "google/protobuf/empty.proto";
+
+service Foo {
+    rpc SubscribeStream(stream google.protobuf.Empty) returns (google.protobuf.Empty);
+}

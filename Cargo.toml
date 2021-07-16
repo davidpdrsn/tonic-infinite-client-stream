@@ -1,0 +1,14 @@
+[package]
+name = "tonic-infinite-client-stream"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+tonic = "0.5"
+prost = "0.8"
+tokio = { version = "1.0", features = ["rt-multi-thread", "time", "fs", "macros", "net"] }
+futures = { version = "0.3", default-features = false, features = ["alloc"] }
+prost-types = "0.8.0"
+
+[build-dependencies]
+tonic-build = "0.5"
